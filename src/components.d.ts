@@ -4,17 +4,20 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
-    ElTooltip: typeof import('element-plus/es')['ElTooltip']
+    ElAside: typeof import('element-plus/es')['ElAside']
+    ElContainer: typeof import('element-plus/es')['ElContainer']
+    ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElMain: typeof import('element-plus/es')['ElMain']
+    ElMenu: typeof import('element-plus/es')['ElMenu']
+    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
+    ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
+    ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
+    ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     EnProcess: typeof import('./components/EnProcess.md')['default']
-    IAkarIconsGithubFill: typeof import('~icons/akar-icons/github-fill')['default']
-    ILaLanguage: typeof import('~icons/la/language')['default']
-    IMdiContentDuplicate: typeof import('~icons/mdi/content-duplicate')['default']
-    IMdiHomeSearchOutline: typeof import('~icons/mdi/home-search-outline')['default']
-    IPhCloudMoonBold: typeof import('~icons/ph/cloud-moon-bold')['default']
-    IPhSunHorizonBold: typeof import('~icons/ph/sun-horizon-bold')['default']
-    IRiArticleLine: typeof import('~icons/ri/article-line')['default']
+    NavSilder: typeof import('./components/layout/NavSilder.vue')['default']
     TheFooter: typeof import('./components/TheFooter.vue')['default']
+    TopHeader: typeof import('./components/layout/TopHeader.vue')['default']
     ZhProcess: typeof import('./components/ZhProcess.md')['default']
   }
 }

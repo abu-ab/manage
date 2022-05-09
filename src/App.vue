@@ -1,14 +1,19 @@
 <script setup lang="ts">
 import zhCn from 'element-plus/lib/locale/lang/zh-cn';
+import NavSilder from './components/layout/NavSilder.vue';
+import TopHeader from './components/layout/TopHeader.vue';
 
 const locale = zhCn;
 </script>
 
 <template>
-  <div class="m-5">
-    <el-config-provider :locale="locale">
-      <router-view></router-view>
-    </el-config-provider>
-  </div>
-  <TheFooter></TheFooter>
+  <el-container class="h-[100vh] flex-col">
+    <TopHeader></TopHeader>
+    <el-container class="flex">
+      <NavSilder></NavSilder>
+      <el-main class="flex-1 overflow-y-auto overflow-x-hidden p-0">
+        <router-view></router-view>
+      </el-main>
+    </el-container>
+  </el-container>
 </template>
