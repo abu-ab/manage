@@ -16,4 +16,17 @@ const locale = zhCn;
       </el-main>
     </el-container>
   </el-container>
+
+  <div class="container">
+    <m-header></m-header>
+    <m-content></m-content>
+    <m-footer></m-footer>
+  </div>
 </template>
+
+<style lang="scss" scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+}
+</style>

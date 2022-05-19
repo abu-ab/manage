@@ -5,6 +5,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     ElAside: typeof import('element-plus/es')['ElAside']
+    ElButton: typeof import('element-plus/es')['ElButton']
     ElContainer: typeof import('element-plus/es')['ElContainer']
     ElHeader: typeof import('element-plus/es')['ElHeader']
     ElIcon: typeof import('element-plus/es')['ElIcon']
@@ -15,6 +16,7 @@ declare module 'vue' {
     ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     EnProcess: typeof import('./components/EnProcess.md')['default']
+    MainPanel: typeof import('./components/layout/MainPanel.vue')['default']
     NavSilder: typeof import('./components/layout/NavSilder.vue')['default']
     TheFooter: typeof import('./components/TheFooter.vue')['default']
     TopHeader: typeof import('./components/layout/TopHeader.vue')['default']

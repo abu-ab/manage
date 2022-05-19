@@ -16,6 +16,7 @@
         </template>
       </p>
       <div>{{ t('before coding') }} , {{ t('setup ide') }} <strong>VSCode</strong> + <strong>Volar</strong></div>
+      <el-button type="primary"></el-button>
     </div>
   </div>
 </template>

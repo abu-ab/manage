@@ -60,7 +60,7 @@ export default defineConfig((env) => {
         // 全局引入了 scss 的文件
         scss: {
           additionalData: `
-          @import "@/assets/styles/variables.scss";
+          @import "@/styles/variables.scss";
         `,
           javascriptEnabled: true,
         },

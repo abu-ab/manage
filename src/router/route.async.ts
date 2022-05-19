@@ -20,6 +20,11 @@ const asyncRoutes: Array<RouteRecordRaw> = [
     },
     component: () => import('@/views/example/MarkdownPage.vue'),
   },
+  {
+    path: '/ststem',
+    name: 'system',
+    component: () => import('@/views/systems/MenuList.vue'),
+  },
 ];
 
 export default asyncRoutes;
